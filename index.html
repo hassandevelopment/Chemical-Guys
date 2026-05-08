@@ -1,131 +1,102 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chemical Guys Bahrain — الموزع الرسمي. تلميع احترافي، سيراميك، PPF، وعازل حراري في التبلي، البحرين.">
-  <title>Chemical Guys Bahrain — مركز كميكل قايز</title>
-
-  <!-- Fonts -->
+  <meta name="description" content="Chemical Guys Bahrain — Official distributor. Professional detailing, ceramic coating, PPF, and heat insulation in Tubli, Bahrain.">
+  <title>Chemical Guys Bahrain</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono/style.css">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  MOBILE NAV OVERLAY                                     -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- MOBILE NAV -->
 <div id="mobile-nav" role="dialog" aria-label="Navigation menu">
-  <a href="#services"   class="mobile-nav-link" data-i18n="nav_services">الخدمات</a>
-  <a href="#pricing"    class="mobile-nav-link" data-i18n="nav_pricing">الأسعار</a>
-  <a href="#protection" class="mobile-nav-link" data-i18n="nav_protection">الحماية</a>
-  <a href="#gallery"    class="mobile-nav-link" data-i18n="nav_work">أعمالنا</a>
-  <a href="#visit"      class="mobile-nav-link" data-i18n="nav_visit">زيارة</a>
+  <a href="#services"   class="mobile-nav-link" data-i18n="nav_services">Services</a>
+  <a href="#pricing"    class="mobile-nav-link" data-i18n="nav_pricing">Pricing</a>
+  <a href="#protection" class="mobile-nav-link" data-i18n="nav_protection">Protection</a>
+  <a href="#gallery"    class="mobile-nav-link" data-i18n="nav_work">Our Work</a>
+  <a href="#visit"      class="mobile-nav-link" data-i18n="nav_visit">Visit</a>
   <div class="mobile-nav-status" style="margin-top:2rem">
-    <div class="status-pill shop-status">
-      <span class="status-dot"></span>
-      <span class="status-text"></span>
-    </div>
+    <div class="status-pill shop-status"><span class="status-dot"></span><span class="status-text"></span></div>
   </div>
-  <button class="mobile-book-btn" data-open-booking>احجز الآن</button>
-  <button id="mobile-lang-btn" class="lang-btn" style="margin-top:1rem">English</button>
+  <button class="mobile-book-btn" data-open-booking data-i18n="nav_book">Book Now</button>
+  <button id="mobile-lang-btn" class="lang-btn" style="margin-top:1rem">العربية</button>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  NAV                                                    -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- NAV -->
 <nav id="nav" role="navigation">
   <div class="nav-logo">
-    <div class="nav-logo-mark">CG</div>
+    <img src="Photos/logo.png" alt="Chemical Guys Bahrain logo">
     <div>
       <div class="nav-wordmark">Chemical Guys</div>
       <div class="nav-tag">Bahrain · Tubli</div>
     </div>
   </div>
-
   <div class="nav-links">
-    <a href="#services"   data-i18n="nav_services">الخدمات</a>
-    <a href="#pricing"    data-i18n="nav_pricing">الأسعار</a>
-    <a href="#protection" data-i18n="nav_protection">الحماية</a>
-    <a href="#gallery"    data-i18n="nav_work">أعمالنا</a>
-    <a href="#visit"      data-i18n="nav_visit">زيارة</a>
+    <a href="#services"   data-i18n="nav_services">Services</a>
+    <a href="#pricing"    data-i18n="nav_pricing">Pricing</a>
+    <a href="#protection" data-i18n="nav_protection">Protection</a>
+    <a href="#gallery"    data-i18n="nav_work">Our Work</a>
+    <a href="#visit"      data-i18n="nav_visit">Visit</a>
   </div>
-
   <div class="nav-right">
-    <div class="status-pill shop-status">
-      <span class="status-dot"></span>
-      <span class="status-text"></span>
-    </div>
-    <button id="lang-btn" class="lang-btn">English</button>
-    <button class="nav-book" data-open-booking data-i18n="nav_book">احجز الآن</button>
-    <button id="hamburger" class="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="status-pill shop-status"><span class="status-dot"></span><span class="status-text"></span></div>
+    <button id="lang-btn" class="lang-btn">العربية</button>
+    <button class="nav-book" data-open-booking data-i18n="nav_book">Book Now</button>
+    <button id="hamburger" class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  MARQUEE                                                -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
-    <span class="marquee-item">DETAILING</span><span class="marquee-dot">·</span>
-    <span class="marquee-item hot">CERAMIC COATING</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">PAINT PROTECTION FILM</span><span class="marquee-dot">·</span>
-    <span class="marquee-item hot">HEAT INSULATION</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Detailing</span><span class="marquee-dot">·</span>
+    <span class="marquee-item hot">Ceramic Coating</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Paint Protection Film</span><span class="marquee-dot">·</span>
+    <span class="marquee-item hot">Heat Insulation</span><span class="marquee-dot">·</span>
     <span class="marquee-item accent">+973 3393 4433</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">TUBLI · BAHRAIN</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">OFFICIAL DISTRIBUTOR</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">ELITE SHINE TRADING</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">DETAILING</span><span class="marquee-dot">·</span>
-    <span class="marquee-item hot">CERAMIC COATING</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">PAINT PROTECTION FILM</span><span class="marquee-dot">·</span>
-    <span class="marquee-item hot">HEAT INSULATION</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Tubli, Bahrain</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Official Distributor</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Elite Shine Trading</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Detailing</span><span class="marquee-dot">·</span>
+    <span class="marquee-item hot">Ceramic Coating</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Paint Protection Film</span><span class="marquee-dot">·</span>
+    <span class="marquee-item hot">Heat Insulation</span><span class="marquee-dot">·</span>
     <span class="marquee-item accent">+973 3393 4433</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">TUBLI · BAHRAIN</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">OFFICIAL DISTRIBUTOR</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">ELITE SHINE TRADING</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Tubli, Bahrain</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Official Distributor</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Elite Shine Trading</span><span class="marquee-dot">·</span>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  HERO                                                   -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HERO -->
 <section id="hero">
   <div class="hero-grid">
     <div>
       <div class="hero-top-badges">
-        <div class="status-pill shop-status">
-          <span class="status-dot"></span>
-          <span class="status-text"></span>
-        </div>
-        <div class="hero-badge mono">OFFICIAL BAHRAIN DISTRIBUTOR</div>
+        <div class="status-pill shop-status"><span class="status-dot"></span><span class="status-text"></span></div>
+        <div class="hero-badge">Official Bahrain Distributor</div>
       </div>
-
       <h1 class="hero-headline">
-        <span data-i18n="hero_line1">مصممة</span><br>
-        <span class="accent" data-i18n="hero_line2">للبحرين</span><br>
-        <span data-i18n="hero_line3">للطلاء.</span>
+        <span data-i18n="hero_line1">PROTECT</span><br>
+        <span class="accent" data-i18n="hero_line2">WHAT YOU</span><br>
+        <span data-i18n="hero_line3">DRIVE.</span>
       </h1>
-
-      <p class="hero-lede" data-i18n="hero_lede">الموزع الرسمي لـ Chemical Guys في البحرين. تلميع احترافي، طلاء سيراميك، حماية PPF، وعازل حراري في التبلي.</p>
-
+      <p class="hero-lede" data-i18n="hero_lede">Official Chemical Guys distributor in Bahrain. Professional detailing, nano ceramic coating, PPF, and heat insulation film in Tubli.</p>
       <div class="hero-ctas">
-        <button class="btn-primary" data-open-booking data-i18n="book_cta">ابدأ الحجز</button>
-        <a href="#pricing" class="btn-link" data-i18n="prices_cta">شاهد الأسعار ↓</a>
+        <button class="btn-primary" data-open-booking data-i18n="book_cta">Book an Appointment</button>
+        <a href="#pricing" class="btn-link" data-i18n="prices_cta">See Prices</a>
       </div>
     </div>
-
     <div>
       <div class="hero-photo-wrap">
         <img src="Photos/IMG_3779.PNG" alt="Chemical Guys Bahrain shop in Tubli" loading="eager">
-        <div class="hero-photo-label mono">FIG. 01 / TUBLI SHOP</div>
+        <div class="hero-photo-label">Tubli Shop</div>
       </div>
     </div>
   </div>
@@ -133,106 +104,104 @@
   <div class="telemetry-strip">
     <div class="telemetry-item reveal">
       <div class="tel-val">13+</div>
-      <div class="tel-label" data-i18n="tel_exp">EXPERIENCE</div>
+      <div class="tel-label" data-i18n="tel_exp">Years Experience</div>
     </div>
     <div class="telemetry-item reveal reveal-delay-1">
       <div class="tel-val">04</div>
-      <div class="tel-label" data-i18n="tel_services">SERVICE LINES</div>
+      <div class="tel-label" data-i18n="tel_services">Services</div>
     </div>
     <div class="telemetry-item reveal reveal-delay-2">
-      <div class="tel-val">2 YR</div>
-      <div class="tel-label" data-i18n="tel_ceramic">CERAMIC WARRANTY</div>
+      <div class="tel-val">2 Yr</div>
+      <div class="tel-label" data-i18n="tel_ceramic">Ceramic Warranty</div>
     </div>
     <div class="telemetry-item reveal reveal-delay-3">
       <div class="tel-val">90%</div>
-      <div class="tel-label" data-i18n="tel_heat">HEAT REJECTION</div>
+      <div class="tel-label" data-i18n="tel_heat">Heat Rejection</div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  SERVICES — § 01                                        -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SERVICES -->
 <section id="services" class="section">
   <div class="section-inner">
     <div class="section-head reveal">
-      <span class="section-index">§ 01 / WHAT WE DO</span>
-      <h2 class="h-l display-up"><span data-i18n="services_head">أربع خدمات. / محترفة.</span></h2>
+      <div class="eyebrow" data-i18n="services_eyebrow">What We Do</div>
+      <h2 class="h-l display-up" data-i18n="services_head">Our Services.</h2>
     </div>
 
     <div class="services-grid">
       <article class="service-card reveal" data-service="detailing">
         <div class="card-top">
-          <span class="card-track mono">01</span>
-          <span class="card-badge mono">DETAILING</span>
+          <span class="card-track">01</span>
+          <span class="card-badge">Detailing</span>
         </div>
         <div class="card-photo">
           <img src="Photos/IMG_3780.PNG" alt="Professional car detailing" loading="lazy">
         </div>
         <div class="card-body">
-          <h3 class="card-title" data-i18n="svc1_title">باقة التلميع</h3>
-          <p class="card-blurb" data-i18n="svc1_blurb">غسيل عميق خارجي وداخلي، تنظيف بالبخار، تلميع 4 مراحل، شمع طبيعي، واستعادة المصابيح.</p>
+          <h3 class="card-title" data-i18n="svc1_title">Detailing Package</h3>
+          <p class="card-blurb" data-i18n="svc1_blurb">Deep exterior &amp; interior wash, steam clean, 4-stage polish, natural wax, engine bay, and headlight restoration.</p>
           <div class="card-price">
-            <span class="price-from mono">FROM</span>
+            <span class="price-from">From</span>
             <span class="price-num">35</span>
-            <span class="price-currency mono">BHD</span>
+            <span class="price-currency">BHD</span>
           </div>
         </div>
       </article>
 
       <article class="service-card reveal reveal-delay-1" data-service="ceramic">
         <div class="card-top">
-          <span class="card-track mono">02</span>
-          <span class="card-badge mono">CERAMIC</span>
+          <span class="card-track">02</span>
+          <span class="card-badge">Ceramic</span>
         </div>
         <div class="card-photo">
           <img src="Photos/IMG_3776.PNG" alt="Nano ceramic coating" loading="lazy">
         </div>
         <div class="card-body">
-          <h3 class="card-title" data-i18n="svc2_title">طلاء سيراميك</h3>
-          <p class="card-blurb" data-i18n="svc2_blurb">طبقة نانو سيراميك توفر حماية طويلة الأمد، لمعة فائقة، ومقاومة للخدوش والأوساخ.</p>
+          <h3 class="card-title" data-i18n="svc2_title">Nano Ceramic</h3>
+          <p class="card-blurb" data-i18n="svc2_blurb">Professional nano ceramic coating. Long-term protection, extreme gloss, hydrophobic and scratch-resistant surface.</p>
           <div class="card-price">
-            <span class="price-from mono">FROM</span>
+            <span class="price-from">From</span>
             <span class="price-num">40</span>
-            <span class="price-currency mono">BHD</span>
+            <span class="price-currency">BHD</span>
           </div>
         </div>
       </article>
 
       <article class="service-card reveal reveal-delay-2" data-service="ppf">
         <div class="card-top">
-          <span class="card-track mono">03</span>
-          <span class="card-badge mono">PPF</span>
+          <span class="card-track">03</span>
+          <span class="card-badge">PPF</span>
         </div>
         <div class="card-photo">
           <img src="Photos/IMG_3774.PNG" alt="Paint Protection Film" loading="lazy">
         </div>
         <div class="card-body">
-          <h3 class="card-title" data-i18n="svc3_title">حماية الطلاء PPF</h3>
-          <p class="card-blurb" data-i18n="svc3_blurb">فيلم حماية 8.5 ميل للسطح الكامل أو الواجهة الأمامية. شفاء ذاتي، مقاوم للصدمات، بشهادة فحص.</p>
+          <h3 class="card-title" data-i18n="svc3_title">Paint Protection Film</h3>
+          <p class="card-blurb" data-i18n="svc3_blurb">8.5 mil PPF for full car or front section. Self-healing, impact resistant. Inspection certificate included.</p>
           <div class="card-price">
-            <span class="price-from mono">FROM</span>
+            <span class="price-from">From</span>
             <span class="price-num">25</span>
-            <span class="price-currency mono">BHD</span>
+            <span class="price-currency">BHD</span>
           </div>
         </div>
       </article>
 
       <article class="service-card reveal reveal-delay-3" data-service="heat">
         <div class="card-top">
-          <span class="card-track mono">04</span>
-          <span class="card-badge mono">HEAT FILM</span>
+          <span class="card-track">04</span>
+          <span class="card-badge">Heat Film</span>
         </div>
         <div class="card-photo">
           <img src="Photos/IMG_3778.PNG" alt="Heat insulation film" loading="lazy">
         </div>
         <div class="card-body">
-          <h3 class="card-title" data-i18n="svc4_title">العازل الحراري</h3>
-          <p class="card-blurb" data-i18n="svc4_blurb">فيلم أمريكي يعزل 90% من الحرارة. سماكة 2 ملم، طبقتان، ضمان 5 سنوات، يشمل الزجاج الأمامي.</p>
+          <h3 class="card-title" data-i18n="svc4_title">Heat Insulation Film</h3>
+          <p class="card-blurb" data-i18n="svc4_blurb">American film with 90% heat rejection. 2mm thick, 2 layers, 5-year warranty. All sizes including windshield.</p>
           <div class="card-price">
-            <span class="price-from mono">FROM</span>
+            <span class="price-from">From</span>
             <span class="price-num">60</span>
-            <span class="price-currency mono">BHD</span>
+            <span class="price-currency">BHD</span>
           </div>
         </div>
       </article>
@@ -240,118 +209,105 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  PRICE CONFIGURATOR — § 02                             -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PRICING TABLE -->
 <section id="pricing" class="section">
   <div class="section-inner">
     <div class="section-head reveal">
-      <span class="section-index">§ 02 / PRICING</span>
-      <h2 class="h-l display-up"><span data-i18n="cfg_head">CONFIGURE YOUR / PACKAGE.</span></h2>
+      <div class="eyebrow" data-i18n="pricing_eyebrow">Detailing Prices</div>
+      <h2 class="h-l display-up" data-i18n="pricing_head">Detailing Packages</h2>
+    </div>
+    <p class="pricing-subhead reveal" data-i18n="pricing_subhead">Select your vehicle size and ceramic protection level below.</p>
+
+    <div class="price-table-grid reveal">
+      <!-- SMALL -->
+      <div class="price-col" data-price-col="S">
+        <div class="price-col-head">
+          <div class="price-col-size" data-i18n="s_label">Small</div>
+          <div class="price-col-eg" data-i18n="s_eg">Sedan · Hatchback</div>
+        </div>
+        <div class="price-row" data-price-row="base">
+          <span class="price-row-name" data-i18n="base_label">Base Package</span>
+          <span class="price-row-val">35 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c6">
+          <span class="price-row-name" data-i18n="c6_label">+6 Mo Ceramic</span>
+          <span class="price-row-val">40 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c12">
+          <span class="price-row-name" data-i18n="c12_label">+1 Yr Ceramic</span>
+          <span class="price-row-val">50 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c24">
+          <span class="price-row-name" data-i18n="c24_label">+2 Yr Ceramic</span>
+          <span class="price-row-val">65 BHD</span>
+        </div>
+      </div>
+
+      <!-- MEDIUM -->
+      <div class="price-col active" data-price-col="M">
+        <div class="price-col-head">
+          <div class="price-col-size" data-i18n="m_label">Medium</div>
+          <div class="price-col-eg" data-i18n="m_eg">SUV · Crossover</div>
+        </div>
+        <div class="price-row active" data-price-row="base">
+          <span class="price-row-name" data-i18n="base_label">Base Package</span>
+          <span class="price-row-val">45 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c6">
+          <span class="price-row-name" data-i18n="c6_label">+6 Mo Ceramic</span>
+          <span class="price-row-val">50 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c12">
+          <span class="price-row-name" data-i18n="c12_label">+1 Yr Ceramic</span>
+          <span class="price-row-val">60 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c24">
+          <span class="price-row-name" data-i18n="c24_label">+2 Yr Ceramic</span>
+          <span class="price-row-val">75 BHD</span>
+        </div>
+      </div>
+
+      <!-- LARGE -->
+      <div class="price-col" data-price-col="L">
+        <div class="price-col-head">
+          <div class="price-col-size" data-i18n="l_label">Large</div>
+          <div class="price-col-eg" data-i18n="l_eg">7-Seater · Pickup</div>
+        </div>
+        <div class="price-row" data-price-row="base">
+          <span class="price-row-name" data-i18n="base_label">Base Package</span>
+          <span class="price-row-val">55 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c6">
+          <span class="price-row-name" data-i18n="c6_label">+6 Mo Ceramic</span>
+          <span class="price-row-val">60 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c12">
+          <span class="price-row-name" data-i18n="c12_label">+1 Yr Ceramic</span>
+          <span class="price-row-val">70 BHD</span>
+        </div>
+        <div class="price-row" data-price-row="c24">
+          <span class="price-row-name" data-i18n="c24_label">+2 Yr Ceramic</span>
+          <span class="price-row-val">85 BHD</span>
+        </div>
+      </div>
     </div>
 
-    <div class="cfg-grid">
-      <div class="cfg-card reveal">
-        <div class="cfg-label mono" data-i18n="cfg_label">CONFIGURED TOTAL</div>
-        <div class="numplate" id="cfg-total-display" style="color:var(--c-accent)">45 BHD</div>
-        <div class="cfg-summary">
-          <div class="cfg-row">
-            <span class="cfg-row-label mono" data-i18n="cfg_size_label">VEHICLE SIZE</span>
-            <span class="cfg-row-val" id="cfg-size-row">Medium</span>
-          </div>
-          <div class="cfg-row">
-            <span class="cfg-row-label mono" data-i18n="cfg_tier_label">CERAMIC TIER</span>
-            <span class="cfg-row-val" id="cfg-tier-row">Base Package</span>
-          </div>
-        </div>
-        <div class="cfg-ctas">
-          <button class="btn-primary" id="cfg-book-btn" data-i18n="cfg_book">BOOK THIS PACKAGE</button>
-          <a href="#" class="btn-link" id="cfg-wa-link" target="_blank" rel="noopener" data-i18n="cfg_wa">ASK ON WHATSAPP</a>
-        </div>
-      </div>
-
-      <div class="cfg-controls reveal reveal-delay-1">
-        <div>
-          <div class="ctrl-group-label mono" data-i18n="cfg_size_label">VEHICLE SIZE</div>
-          <div class="toggle-group">
-            <button class="toggle-btn" data-size-btn="S">
-              <span data-i18n="s_label">SMALL</span>
-              <span class="size-eg" data-i18n="s_eg">Sedan · Hatch</span>
-              <span class="toggle-price">35 BHD</span>
-            </button>
-            <button class="toggle-btn active" data-size-btn="M">
-              <span data-i18n="m_label">MEDIUM</span>
-              <span class="size-eg" data-i18n="m_eg">SUV · Crossover</span>
-              <span class="toggle-price">45 BHD</span>
-            </button>
-            <button class="toggle-btn" data-size-btn="L">
-              <span data-i18n="l_label">LARGE</span>
-              <span class="size-eg" data-i18n="l_eg">7-Seater · Pickup</span>
-              <span class="toggle-price">55 BHD</span>
-            </button>
-          </div>
-        </div>
-
-        <div>
-          <div class="ctrl-group-label mono" data-i18n="cfg_tier_label">CERAMIC TIER</div>
-          <div class="toggle-group" style="flex-direction:column;gap:0.5rem">
-            <button class="toggle-btn active" data-tier-btn="base" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0">
-              <span data-i18n="base_label">BASE PACKAGE</span><span class="toggle-price">45 BHD</span>
-            </button>
-            <button class="toggle-btn" data-tier-btn="c6" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0">
-              <span data-i18n="c6_label">+6 MO CERAMIC</span><span class="toggle-price">50 BHD</span>
-            </button>
-            <button class="toggle-btn" data-tier-btn="c12" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0">
-              <span data-i18n="c12_label">+1 YR CERAMIC</span><span class="toggle-price">60 BHD</span>
-            </button>
-            <button class="toggle-btn" data-tier-btn="c24" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0">
-              <span data-i18n="c24_label">+2 YR CERAMIC</span><span class="toggle-price">75 BHD</span>
-            </button>
-          </div>
-        </div>
-
-        <details class="cfg-matrix-wrap">
-          <summary class="mono">FULL PRICE MATRIX</summary>
-          <div class="price-matrix">
-            <div class="matrix-cell header">SIZE</div>
-            <div class="matrix-cell header">BASE</div>
-            <div class="matrix-cell header">+6 MO</div>
-            <div class="matrix-cell header">+1 YR</div>
-            <div class="matrix-cell header">+2 YR</div>
-            <div class="matrix-cell">SMALL</div>
-            <div class="matrix-cell accent-num">35</div>
-            <div class="matrix-cell accent-num">40</div>
-            <div class="matrix-cell accent-num">50</div>
-            <div class="matrix-cell accent-num">65</div>
-            <div class="matrix-cell">MEDIUM</div>
-            <div class="matrix-cell accent-num">45</div>
-            <div class="matrix-cell accent-num">50</div>
-            <div class="matrix-cell accent-num">60</div>
-            <div class="matrix-cell accent-num">75</div>
-            <div class="matrix-cell">LARGE</div>
-            <div class="matrix-cell accent-num">55</div>
-            <div class="matrix-cell accent-num">60</div>
-            <div class="matrix-cell accent-num">70</div>
-            <div class="matrix-cell accent-num">85</div>
-          </div>
-        </details>
-      </div>
+    <div class="pricing-cta-row reveal">
+      <button class="btn-primary" id="pricing-book-btn" data-open-booking data-i18n="cfg_book">Book This Package</button>
+      <a href="#" class="btn-link" id="pricing-wa-link" target="_blank" rel="noopener" data-i18n="cfg_wa">Ask on WhatsApp</a>
+      <span class="pricing-selected-summary" id="pricing-summary"></span>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  PPF SLIDER — § 03                                      -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PPF BEFORE/AFTER SLIDER -->
 <section id="protection" class="section">
   <div class="section-inner">
     <div class="section-head reveal">
-      <span class="section-index">§ 03 / PROTECTION</span>
-      <h2 class="h-l display-up">
-        <span>DRAG TO SEE /</span><br>
-        <span style="color:var(--c-accent-3)" data-i18n="ppf_head">WHAT PPF STOPS.</span>
-      </h2>
+      <div class="eyebrow" data-i18n="ppf_eyebrow">Paint Protection</div>
+      <h2 class="h-l display-up" data-i18n="ppf_head">Paint Protection Film (PPF)</h2>
     </div>
+    <p class="ppf-subhead reveal" data-i18n="ppf_subhead">Drag the handle to see the difference.</p>
 
     <div id="ppf-slider" class="ppf-slider-wrap reveal" title="Drag to compare">
       <div class="ppf-side ppf-before">
@@ -369,11 +325,6 @@
             <ellipse cx="740" cy="180" rx="4" ry="2" fill="#ff4444" transform="rotate(45,740,180)"/>
             <ellipse cx="160" cy="230" rx="3" ry="1" fill="#ff6b6b" transform="rotate(-55,160,230)"/>
             <ellipse cx="380" cy="280" rx="6" ry="2.5" fill="#cc2222" transform="rotate(20,380,280)"/>
-            <ellipse cx="580" cy="420" rx="4" ry="1.5" fill="#ff4444" transform="rotate(-25,580,420)"/>
-            <ellipse cx="720" cy="70"  rx="5" ry="2" fill="#ff6b6b" transform="rotate(40,720,70)"/>
-            <ellipse cx="50"  cy="180" rx="3" ry="1.5" fill="#cc2222" transform="rotate(-10,50,180)"/>
-            <ellipse cx="310" cy="170" rx="4" ry="2" fill="#ff4444" transform="rotate(65,310,170)"/>
-            <ellipse cx="480" cy="110" rx="5" ry="2" fill="#ff6b6b" transform="rotate(-35,480,110)"/>
           </g>
           <g opacity="0.3" stroke="#ff4444" stroke-width="0.8" fill="none">
             <line x1="80"  y1="60"  x2="140" y2="120"/>
@@ -381,10 +332,9 @@
             <line x1="500" y1="80"  x2="520" y2="150"/>
             <line x1="650" y1="170" x2="670" y2="230"/>
             <line x1="180" y1="350" x2="230" y2="320"/>
-            <line x1="420" y1="310" x2="400" y2="380"/>
           </g>
         </svg>
-        <div class="ppf-label before-label mono" data-i18n="ppf_before">B · WITHOUT PPF</div>
+        <div class="ppf-label before-label" data-i18n="ppf_before">Without PPF</div>
       </div>
 
       <div class="ppf-side ppf-after" id="ppf-after">
@@ -400,7 +350,7 @@
           <rect width="800" height="450" fill="url(#gloss)"/>
           <ellipse cx="200" cy="150" rx="300" ry="80" fill="white" opacity="0.04" transform="rotate(-15,200,150)"/>
         </svg>
-        <div class="ppf-label after-label mono" style="color:var(--c-accent-3)" data-i18n="ppf_after">A · WITH PPF · 8.5 MIL</div>
+        <div class="ppf-label after-label" data-i18n="ppf_after">With PPF · 8.5 mil</div>
       </div>
 
       <div class="ppf-handle" id="ppf-handle" style="left:50%">
@@ -408,66 +358,91 @@
       </div>
     </div>
 
-    <div class="ppf-table-grid">
-      <div>
-        <table class="ppf-table">
-          <tbody>
-            <tr><td>Headlights<span class="ppf-thickness mono">6.5 MIL</span></td><td>25 BHD</td></tr>
-            <tr><td>Front Windshield S/M<span class="ppf-thickness mono">6.5 MIL</span></td><td>35 BHD</td></tr>
-            <tr><td>Front Windshield L<span class="ppf-thickness mono">6.5 MIL</span></td><td>45 BHD</td></tr>
-            <tr><td>Front Section<span class="ppf-thickness mono">8.5 MIL</span></td><td>180 BHD</td></tr>
-            <tr><td>Full Car<span class="ppf-thickness mono">8.5 MIL</span></td><td>450 BHD</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <div class="spec-chips">
-          <span class="spec-chip">SELF-HEALING</span>
-          <span class="spec-chip">IMPACT RESISTANT</span>
-          <span class="spec-chip">SCRATCH RESISTANT</span>
-          <span class="spec-chip">ANTI-YELLOWING</span>
-          <span class="spec-chip">UV PROTECTION</span>
-          <span class="spec-chip">NANO-CERAMIC TECH</span>
-          <span class="spec-chip">~50% GLOSS BOOST</span>
-          <span class="spec-chip">CERT. PROVIDED</span>
+    <div class="ppf-content-grid">
+      <!-- Price list -->
+      <div class="ppf-price-list reveal">
+        <div class="ppf-price-row">
+          <div class="ppf-row-left">
+            <span class="ppf-row-name">Headlights</span>
+            <span class="mil-badge">6.5 mil</span>
+          </div>
+          <span class="ppf-row-price">25 BHD</span>
         </div>
-        <button class="btn-primary" data-open-booking data-service="ppf" style="margin-top:1rem">BOOK PPF</button>
+        <div class="ppf-price-row">
+          <div class="ppf-row-left">
+            <span class="ppf-row-name">Front Windshield — Small / Medium</span>
+            <span class="mil-badge">6.5 mil</span>
+          </div>
+          <span class="ppf-row-price">35 BHD</span>
+        </div>
+        <div class="ppf-price-row">
+          <div class="ppf-row-left">
+            <span class="ppf-row-name">Front Windshield — Large</span>
+            <span class="mil-badge">6.5 mil</span>
+          </div>
+          <span class="ppf-row-price">45 BHD</span>
+        </div>
+        <div class="ppf-price-row">
+          <div class="ppf-row-left">
+            <span class="ppf-row-name">Front Section of Car</span>
+            <span class="mil-badge">8.5 mil</span>
+          </div>
+          <span class="ppf-row-price">180 BHD</span>
+        </div>
+        <div class="ppf-price-row">
+          <div class="ppf-row-left">
+            <span class="ppf-row-name">Full Car</span>
+            <span class="mil-badge">8.5 mil</span>
+          </div>
+          <span class="ppf-row-price">450 BHD</span>
+        </div>
+      </div>
+
+      <!-- Features + CTA -->
+      <div class="reveal reveal-delay-1">
+        <div class="ppf-features">
+          <div class="ppf-feature-item">Self-healing film</div>
+          <div class="ppf-feature-item">Anti-yellowing</div>
+          <div class="ppf-feature-item">Impact resistant</div>
+          <div class="ppf-feature-item">UV protection</div>
+          <div class="ppf-feature-item">Scratch resistant</div>
+          <div class="ppf-feature-item">Nano-ceramic tech</div>
+          <div class="ppf-feature-item">~50% gloss boost</div>
+          <div class="ppf-feature-item">Certificate included</div>
+        </div>
+        <button class="btn-primary" data-open-booking data-service="ppf">Book PPF</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  HEAT INSULATION — § 04                                 -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HEAT INSULATION -->
 <section id="heat" class="section">
   <div class="section-inner">
     <div class="section-head reveal">
-      <span class="section-index">§ 04 / HEAT INSULATION</span>
-      <h2 class="h-l display-up"><span data-i18n="heat_head">AMERICAN FILM. / 90% REJECTION.</span></h2>
+      <div class="eyebrow" data-i18n="heat_eyebrow">Heat Insulation</div>
+      <h2 class="h-l display-up" data-i18n="heat_head">American Heat Insulation Film</h2>
     </div>
 
     <div class="heat-stats reveal">
-      <div class="heat-stat"><div class="heat-stat-val">90%</div><div class="heat-stat-label mono">HEAT REJECTION</div></div>
-      <div class="heat-stat"><div class="heat-stat-val">2MM</div><div class="heat-stat-label mono">THICKNESS</div></div>
-      <div class="heat-stat"><div class="heat-stat-val">2</div><div class="heat-stat-label mono">LAYERS</div></div>
-      <div class="heat-stat"><div class="heat-stat-val">5 YR</div><div class="heat-stat-label mono">WARRANTY</div></div>
+      <div class="heat-stat"><div class="heat-stat-val">90%</div><div class="heat-stat-label">Heat Rejection</div></div>
+      <div class="heat-stat"><div class="heat-stat-val">2mm</div><div class="heat-stat-label">Thickness</div></div>
+      <div class="heat-stat"><div class="heat-stat-val">2</div><div class="heat-stat-label">Layers</div></div>
+      <div class="heat-stat"><div class="heat-stat-val">5 Yr</div><div class="heat-stat-label">Warranty</div></div>
     </div>
 
     <div class="heat-grid">
       <div class="heat-price-card reveal">
-        <div class="heat-price-num">60 BHD</div>
-        <p class="fine" style="margin-bottom:1rem">American heat insulation film. All car sizes including front windshield.</p>
-        <div class="spec-chips" style="margin-bottom:1.5rem">
-          <span class="spec-chip">ALL SIZES</span>
-          <span class="spec-chip">INCL. WINDSHIELD</span>
-          <span class="spec-chip">5 YR WARRANTY</span>
+        <div>
+          <span class="heat-price-num">60</span>
+          <span class="heat-price-bhd">BHD</span>
         </div>
-        <button class="btn-primary" data-open-booking data-service="heat">BOOK HEAT FILM</button>
+        <p class="fine" style="margin: 1rem 0 1.5rem">American heat insulation film covering all vehicle sizes, including the front windshield.</p>
+        <button class="btn-primary" data-open-booking data-service="heat">Book Heat Film</button>
       </div>
       <div class="heat-mobile-card reveal reveal-delay-1">
-        <div class="heat-mobile-title mono">IN-SHOP + MOBILE INSTALLATION</div>
-        <p class="fine" style="margin-bottom:1.5rem">We offer on-site installation at your location. Contact us to arrange mobile service in Bahrain.</p>
+        <div class="heat-mobile-title">In-Shop &amp; Mobile Installation</div>
+        <p class="fine" style="margin-bottom:1.5rem">We offer on-site installation at your location anywhere in Bahrain. Contact us to arrange your mobile appointment.</p>
         <a href="tel:+97333934433" class="phone-num" style="display:block;margin-bottom:0.5rem">+973 3393 4433</a>
         <a href="tel:+97339607289" class="phone-num" style="display:block">+973 3960 7289</a>
       </div>
@@ -475,89 +450,104 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  QUOTE                                                  -->
-<!-- ═══════════════════════════════════════════════════════ -->
-<section id="quote">
-  <div class="quote-grid reveal">
-    <div class="quote-section-label mono">§ HOUSE PHILOSOPHY</div>
-    <div>
-      <blockquote class="quote-text">
-        <span data-i18n="quote_text">"نعامل كل سيارة كأنها الوحيدة التي نسلّمها اليوم."</span>
-      </blockquote>
-      <div class="quote-attr mono" data-i18n="quote_attr">— THE TEAM IN TUBLI</div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  GALLERY — § 05                                         -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GALLERY -->
 <section id="gallery" class="section">
   <div class="section-inner">
     <div class="section-head reveal">
-      <span class="section-index">§ 05 / THE WORK</span>
-      <h2 class="h-l display-up"><span data-i18n="gallery_head">TWENTY CARS. / NO STOCK PHOTOS.</span></h2>
+      <div class="eyebrow" data-i18n="gallery_eyebrow">Our Work</div>
+      <h2 class="h-l display-up" data-i18n="gallery_head">Our Work</h2>
     </div>
+    <p class="gallery-subhead reveal" data-i18n="gallery_subhead">Photos coming soon — see our work on Instagram @chemicalguys_bh</p>
 
     <div class="gallery-grid reveal">
-      <div class="gallery-item wide">
-        <img src="Photos/IMG_3769.PNG" alt="Chemical Guys Bahrain" loading="lazy">
-        <div class="gallery-caption">FIG. 02 / CHEMICAL GUYS BH</div>
+      <!-- Placeholder 1 (wide) -->
+      <div class="gallery-item gallery-placeholder wide">
+        <div class="placeholder-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color:var(--c-ink-dim)"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="placeholder-title">Add Photo</span>
+          <span class="placeholder-label">Detailing Work</span>
+        </div>
       </div>
-      <div class="gallery-item">
-        <img src="Photos/IMG_3770.PNG" alt="Detail work" loading="lazy">
-        <div class="gallery-caption">FIG. 03 / DETAIL WORK</div>
+      <!-- Placeholder 2 -->
+      <div class="gallery-item gallery-placeholder">
+        <div class="placeholder-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color:var(--c-ink-dim)"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="placeholder-title">Add Photo</span>
+          <span class="placeholder-label">Ceramic Coat</span>
+        </div>
       </div>
-      <div class="gallery-item">
-        <img src="Photos/IMG_3771.PNG" alt="Paint protection" loading="lazy">
-        <div class="gallery-caption">FIG. 04 / PPF APPLICATION</div>
+      <!-- Placeholder 3 -->
+      <div class="gallery-item gallery-placeholder">
+        <div class="placeholder-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color:var(--c-ink-dim)"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="placeholder-title">Add Photo</span>
+          <span class="placeholder-label">PPF Application</span>
+        </div>
       </div>
-      <div class="gallery-item">
-        <img src="Photos/IMG_3772.PNG" alt="Ceramic coating" loading="lazy">
-        <div class="gallery-caption">FIG. 05 / CERAMIC COAT</div>
+      <!-- Placeholder 4 -->
+      <div class="gallery-item gallery-placeholder">
+        <div class="placeholder-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color:var(--c-ink-dim)"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="placeholder-title">Add Photo</span>
+          <span class="placeholder-label">Before &amp; After</span>
+        </div>
       </div>
-      <div class="gallery-item wide">
-        <img src="Photos/IMG_3773.PNG" alt="Professional detailing" loading="lazy">
-        <div class="gallery-caption">FIG. 06 / PROFESSIONAL DETAIL</div>
+      <!-- Placeholder 5 (wide) -->
+      <div class="gallery-item gallery-placeholder wide">
+        <div class="placeholder-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color:var(--c-ink-dim)"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="placeholder-title">Add Photo</span>
+          <span class="placeholder-label">Featured Work</span>
+        </div>
       </div>
-      <div class="gallery-item">
-        <img src="Photos/IMG_3775.PNG" alt="Interior detailing" loading="lazy">
-        <div class="gallery-caption">FIG. 07 / INTERIOR DETAIL</div>
+      <!-- Placeholder 6 -->
+      <div class="gallery-item gallery-placeholder">
+        <div class="placeholder-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color:var(--c-ink-dim)"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="placeholder-title">Add Photo</span>
+          <span class="placeholder-label">Interior Detail</span>
+        </div>
       </div>
-      <div class="gallery-item">
-        <img src="Photos/IMG_3777.PNG" alt="Polish finish" loading="lazy">
-        <div class="gallery-caption">FIG. 08 / POLISH FINISH</div>
+      <!-- Placeholder 7 -->
+      <div class="gallery-item gallery-placeholder">
+        <div class="placeholder-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color:var(--c-ink-dim)"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="placeholder-title">Add Photo</span>
+          <span class="placeholder-label">Heat Film Install</span>
+        </div>
       </div>
-      <div class="gallery-item">
-        <img src="Photos/IMG_3781.PNG" alt="Final result" loading="lazy">
-        <div class="gallery-caption">FIG. 09 / FINAL RESULT</div>
+      <!-- Placeholder 8 -->
+      <div class="gallery-item gallery-placeholder">
+        <div class="placeholder-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color:var(--c-ink-dim)"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <span class="placeholder-title">Add Photo</span>
+          <span class="placeholder-label">Polish Finish</span>
+        </div>
       </div>
     </div>
 
-    <div style="margin-top:2.5rem; text-align:center" class="reveal">
-      <a href="https://instagram.com/chemicalguys_bh" target="_blank" rel="noopener" class="btn-ghost">@chemicalguys_bh</a>
+    <div class="gallery-cta reveal">
+      <p class="gallery-ig-note">To see our completed work, follow us on Instagram: <a href="https://instagram.com/chemicalguys_bh" target="_blank" rel="noopener">@chemicalguys_bh</a></p>
+      <a href="https://instagram.com/chemicalguys_bh" target="_blank" rel="noopener" class="btn-ghost">View on Instagram</a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  VISIT / CONTACT — § 06                                 -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- VISIT / CONTACT -->
 <section id="visit" class="section">
   <div class="section-inner">
     <div class="section-head reveal">
-      <span class="section-index">§ 06 / FIND US</span>
-      <h2 class="h-l display-up"><span data-i18n="visit_head">TUBLI. / OPPOSITE TOYOTA PLAZA.</span></h2>
+      <div class="eyebrow" data-i18n="visit_eyebrow">Find Us</div>
+      <h2 class="h-l display-up" data-i18n="visit_head">Find Us</h2>
     </div>
 
     <div class="visit-grid">
       <div class="reveal">
         <table class="hours-table">
           <tbody>
-            <tr><td class="hours-label">MORNING</td><td>8:00 AM – 12:00 PM</td></tr>
-            <tr class="break"><td class="hours-label">BREAK</td><td>12:00 PM – 3:00 PM</td></tr>
-            <tr><td class="hours-label">EVENING</td><td>3:00 PM – 9:00 PM</td></tr>
+            <tr><td class="hours-label">Morning</td><td>8:00 AM – 12:00 PM</td></tr>
+            <tr class="break"><td class="hours-label">Break</td><td>12:00 PM – 3:00 PM</td></tr>
+            <tr><td class="hours-label">Evening</td><td>3:00 PM – 9:00 PM</td></tr>
           </tbody>
         </table>
         <div class="phone-block" style="margin-top:2rem">
@@ -565,8 +555,8 @@
           <a href="tel:+97339607289" class="phone-num">+973 3960 7289</a>
         </div>
         <div class="social-links">
-          <a href="https://instagram.com/chemicalguys_bh" target="_blank" rel="noopener" class="social-link mono">INSTAGRAM</a>
-          <a href="https://wa.me/97333934433" target="_blank" rel="noopener" class="social-link mono">WHATSAPP</a>
+          <a href="https://instagram.com/chemicalguys_bh" target="_blank" rel="noopener" class="social-link">Instagram</a>
+          <a href="https://wa.me/97333934433" target="_blank" rel="noopener" class="social-link">WhatsApp</a>
         </div>
       </div>
 
@@ -576,76 +566,73 @@
             <path d="M16 0C7.164 0 0 7.164 0 16C0 27 16 40 16 40C16 40 32 27 32 16C32 7.164 24.836 0 16 0Z" fill="var(--c-accent)" opacity="0.7"/>
             <circle cx="16" cy="16" r="5" fill="white"/>
           </svg>
-          <div class="map-placeholder-label mono">TUBLI, BAHRAIN</div>
-          <p class="map-address fine">Opposite Toyota Plaza<br>مقابل وكالة تويوتا بلازا</p>
-          <a href="https://maps.google.com/?q=Tubli+Bahrain+Toyota+Plaza" target="_blank" rel="noopener" class="btn-ghost mono" style="margin-top:1rem">OPEN IN MAPS</a>
+          <div class="map-placeholder-label">Tubli, Bahrain</div>
+          <p class="map-address fine">Opposite Toyota Plaza Dealership<br>مقابل وكالة تويوتا بلازا</p>
+          <a href="https://maps.google.com/?q=Tubli+Bahrain+Toyota+Plaza" target="_blank" rel="noopener" class="btn-ghost" style="margin-top:1rem">Open in Maps</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  FOOTER                                                 -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer id="footer">
   <div style="max-width:1480px; margin:0 auto">
     <div class="footer-wordmark">CHEMICAL <span class="accent">GUYS.</span></div>
     <div class="footer-grid">
       <div class="footer-col">
-        <div class="footer-col-title mono">VISIT</div>
+        <div class="footer-col-title">Visit</div>
         <p>Tubli, Bahrain</p>
         <p>Opposite Toyota Plaza</p>
         <p>مقابل وكالة تويوتا بلازا</p>
-        <a href="https://maps.google.com/?q=Tubli+Bahrain" target="_blank" rel="noopener" style="margin-top:0.75rem;display:inline-block;font-family:var(--f-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--c-ink-mute)">OPEN IN MAPS</a>
+        <a href="https://maps.google.com/?q=Tubli+Bahrain" target="_blank" rel="noopener" style="margin-top:0.75rem;display:inline-block;font-size:12px;font-weight:600">Open in Maps</a>
       </div>
       <div class="footer-col">
-        <div class="footer-col-title mono">TALK</div>
+        <div class="footer-col-title">Contact</div>
         <a href="tel:+97333934433" class="phone">+973 3393 4433</a>
         <a href="tel:+97339607289" class="phone" style="margin-top:0.25rem">+973 3960 7289</a>
         <a href="https://instagram.com/chemicalguys_bh" target="_blank" rel="noopener" style="margin-top:0.75rem;display:block">@chemicalguys_bh</a>
       </div>
       <div class="footer-col">
-        <div class="footer-col-title mono">HOURS</div>
+        <div class="footer-col-title">Hours</div>
         <div class="footer-hours-item">8:00 AM – 12:00 PM</div>
-        <div class="footer-hours-item off" style="margin-top:0.25rem">12:00 PM – 3:00 PM</div>
+        <div class="footer-hours-item off" style="margin-top:0.25rem">12:00 PM – 3:00 PM (Break)</div>
         <div class="footer-hours-item" style="margin-top:0.25rem">3:00 PM – 9:00 PM</div>
       </div>
       <div class="footer-col">
-        <div class="footer-col-title mono">LEGAL</div>
+        <div class="footer-col-title">Legal</div>
         <p>Elite Shine Trading</p>
         <p>CR 57428-8</p>
         <p style="margin-top:0.5rem">Official Bahrain Distributor of Chemical Guys USA</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&#169; <span id="footer-year"></span> CHEMICAL GUYS BAHRAIN</span>
-      <span>DESIGNED IN BAHRAIN</span>
+      <span>&#169; <span id="footer-year"></span> Chemical Guys Bahrain</span>
+      <span>Designed in Bahrain</span>
     </div>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  FLOATING DOCK                                          -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FLOATING DOCK -->
 <div id="floating-dock">
   <button class="dock-btn dock-wa" id="dock-wa-btn" title="WhatsApp">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.045-1.104l-.29-.172-2.87.853.817-2.983-.189-.304A7.944 7.944 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
     </svg>
+    WhatsApp
   </button>
-  <button class="dock-btn dock-book" id="dock-book-btn" data-open-booking>BOOK</button>
+  <button class="dock-btn dock-book" id="dock-book-btn" data-open-booking>
+    Book Now
+  </button>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--  BOOKING MODAL                                          -->
-<!-- ═══════════════════════════════════════════════════════ -->
+<!-- BOOKING MODAL -->
 <div id="booking-overlay" role="dialog" aria-modal="true">
   <div id="booking-modal">
     <div class="modal-header">
       <div class="modal-header-left">
-        <span class="modal-step-label mono" id="modal-step-label">STEP 01 OF 04</span>
-        <h2 class="modal-title" data-i18n="booking_title">BOOKING</h2>
+        <span class="modal-step-label" id="modal-step-label">Step 1 of 4</span>
+        <h2 class="modal-title" data-i18n="booking_title">Booking</h2>
       </div>
       <button class="modal-close" id="modal-close-btn" aria-label="Close">&#x2715;</button>
     </div>
@@ -653,27 +640,27 @@
     <!-- Step 1 -->
     <div class="modal-step active" id="step-1">
       <div class="modal-body">
-        <div class="step-heading" data-i18n="step1_title">SELECT SERVICE</div>
+        <div class="step-heading" data-i18n="step1_title">Select Service</div>
         <div class="service-pick-grid">
           <div class="service-pick-card" data-service="detailing">
-            <span class="pick-track mono">01</span>
-            <span class="pick-name" data-i18n="svc1_title">DETAILING PACKAGE</span>
-            <span class="pick-from mono">FROM 35 BHD</span>
+            <span class="pick-track">01</span>
+            <span class="pick-name" data-i18n="svc1_title">Detailing Package</span>
+            <span class="pick-from">From 35 BHD</span>
           </div>
           <div class="service-pick-card" data-service="ceramic">
-            <span class="pick-track mono">02</span>
-            <span class="pick-name" data-i18n="svc2_title">NANO CERAMIC</span>
-            <span class="pick-from mono">FROM 40 BHD</span>
+            <span class="pick-track">02</span>
+            <span class="pick-name" data-i18n="svc2_title">Nano Ceramic</span>
+            <span class="pick-from">From 40 BHD</span>
           </div>
           <div class="service-pick-card" data-service="ppf">
-            <span class="pick-track mono">03</span>
-            <span class="pick-name" data-i18n="svc3_title">PAINT PROTECTION</span>
-            <span class="pick-from mono">FROM 25 BHD</span>
+            <span class="pick-track">03</span>
+            <span class="pick-name" data-i18n="svc3_title">Paint Protection Film</span>
+            <span class="pick-from">From 25 BHD</span>
           </div>
           <div class="service-pick-card" data-service="heat">
-            <span class="pick-track mono">04</span>
-            <span class="pick-name" data-i18n="svc4_title">HEAT INSULATION</span>
-            <span class="pick-from mono">60 BHD</span>
+            <span class="pick-track">04</span>
+            <span class="pick-name" data-i18n="svc4_title">Heat Insulation Film</span>
+            <span class="pick-from">60 BHD</span>
           </div>
         </div>
       </div>
@@ -682,32 +669,32 @@
     <!-- Step 2 -->
     <div class="modal-step" id="step-2">
       <div class="modal-body">
-        <div class="step-heading" data-i18n="step2_title">VEHICLE DETAILS</div>
+        <div class="step-heading" data-i18n="step2_title">Vehicle Details</div>
         <div class="two-col">
           <div class="field-group">
-            <label class="mono" data-i18n="field_make">CAR MAKE</label>
+            <label data-i18n="field_make">Car Make</label>
             <input type="text" id="book-make" class="field-input" placeholder="Toyota, BMW...">
           </div>
           <div class="field-group">
-            <label class="mono" data-i18n="field_model">MODEL</label>
+            <label data-i18n="field_model">Model</label>
             <input type="text" id="book-model" class="field-input" placeholder="Camry, X5...">
           </div>
         </div>
         <div class="field-group" style="margin-top:0.5rem">
-          <label class="mono" data-i18n="cfg_size_label">VEHICLE SIZE</label>
+          <label data-i18n="cfg_size_label">Vehicle Size</label>
           <div class="toggle-group" style="margin-top:0.5rem">
-            <button class="toggle-btn" data-book-size="S"><span data-i18n="s_label">SMALL</span><span class="size-eg" data-i18n="s_eg">Sedan</span></button>
-            <button class="toggle-btn active" data-book-size="M"><span data-i18n="m_label">MEDIUM</span><span class="size-eg" data-i18n="m_eg">SUV</span></button>
-            <button class="toggle-btn" data-book-size="L"><span data-i18n="l_label">LARGE</span><span class="size-eg" data-i18n="l_eg">7-Seater</span></button>
+            <button class="toggle-btn" data-book-size="S"><span data-i18n="s_label">Small</span><span class="size-eg" data-i18n="s_eg">Sedan</span></button>
+            <button class="toggle-btn active" data-book-size="M"><span data-i18n="m_label">Medium</span><span class="size-eg" data-i18n="m_eg">SUV</span></button>
+            <button class="toggle-btn" data-book-size="L"><span data-i18n="l_label">Large</span><span class="size-eg" data-i18n="l_eg">7-Seater</span></button>
           </div>
         </div>
         <div class="field-group" style="margin-top:1rem">
-          <label class="mono" data-i18n="cfg_tier_label">CERAMIC TIER</label>
+          <label data-i18n="cfg_tier_label">Ceramic Protection</label>
           <div class="toggle-group" style="flex-direction:column;gap:0.4rem;margin-top:0.5rem">
-            <button class="toggle-btn active" data-book-tier="base" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="base_label">BASE</span><span class="toggle-price">45 BHD</span></button>
-            <button class="toggle-btn" data-book-tier="c6" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c6_label">+6 MO</span><span class="toggle-price">50 BHD</span></button>
-            <button class="toggle-btn" data-book-tier="c12" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c12_label">+1 YR</span><span class="toggle-price">60 BHD</span></button>
-            <button class="toggle-btn" data-book-tier="c24" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c24_label">+2 YR</span><span class="toggle-price">75 BHD</span></button>
+            <button class="toggle-btn active" data-book-tier="base" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="base_label">Base Package</span><span class="toggle-price">45 BHD</span></button>
+            <button class="toggle-btn" data-book-tier="c6" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c6_label">+6 Mo Ceramic</span><span class="toggle-price">50 BHD</span></button>
+            <button class="toggle-btn" data-book-tier="c12" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c12_label">+1 Yr Ceramic</span><span class="toggle-price">60 BHD</span></button>
+            <button class="toggle-btn" data-book-tier="c24" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c24_label">+2 Yr Ceramic</span><span class="toggle-price">75 BHD</span></button>
           </div>
         </div>
       </div>
@@ -716,23 +703,23 @@
     <!-- Step 3 -->
     <div class="modal-step" id="step-3">
       <div class="modal-body">
-        <div class="step-heading" data-i18n="step3_title">YOUR DETAILS</div>
+        <div class="step-heading" data-i18n="step3_title">Your Details</div>
         <div class="two-col">
           <div class="field-group">
-            <label class="mono" data-i18n="field_name">FULL NAME</label>
+            <label data-i18n="field_name">Full Name</label>
             <input type="text" id="book-name" class="field-input" placeholder="Mohammed Al-...">
           </div>
           <div class="field-group">
-            <label class="mono" data-i18n="field_phone">PHONE</label>
+            <label data-i18n="field_phone">Phone</label>
             <input type="tel" id="book-phone" class="field-input" placeholder="+973 ...">
           </div>
         </div>
         <div class="field-group" style="margin-top:0.5rem">
-          <label class="mono">DATE</label>
+          <label>Preferred Date</label>
           <div class="date-scroll" id="date-picker"></div>
         </div>
         <div class="field-group">
-          <label class="mono">TIME</label>
+          <label>Preferred Time</label>
           <div class="time-grid">
             <button class="time-btn" data-time="8:00 AM">8:00 AM</button>
             <button class="time-btn" data-time="9:00 AM">9:00 AM</button>
@@ -746,7 +733,7 @@
           </div>
         </div>
         <div class="field-group">
-          <label class="mono" data-i18n="field_notes">NOTES (OPTIONAL)</label>
+          <label data-i18n="field_notes">Notes (optional)</label>
           <textarea id="book-notes" class="field-input" rows="3" placeholder="Car colour, special requests..."></textarea>
         </div>
       </div>
@@ -755,10 +742,10 @@
     <!-- Step 4 -->
     <div class="modal-step" id="step-4">
       <div class="modal-body">
-        <div class="step-heading" data-i18n="step4_title">CONFIRM BOOKING</div>
+        <div class="step-heading" data-i18n="step4_title">Confirm Booking</div>
         <div class="confirm-summary" id="confirm-rows"></div>
         <div class="deposit-warning">
-          <div class="deposit-warning-title mono" data-i18n="deposit_title">DEPOSIT POLICY</div>
+          <div class="deposit-warning-title" data-i18n="deposit_title">Deposit Policy</div>
           <p data-i18n="deposit_text">A deposit is required to confirm your booking. Deposits are non-refundable. You may postpone up to 2 days before your appointment.</p>
         </div>
       </div>
@@ -766,12 +753,12 @@
 
     <div class="modal-footer">
       <div>
-        <span class="modal-footer-price-label mono" data-i18n="est_total">EST. TOTAL</span>
+        <span class="modal-footer-price-label" data-i18n="est_total">Est. Total</span>
         <span class="modal-footer-price" id="modal-price-display">&#8212; BHD</span>
       </div>
       <div class="modal-nav-btns">
-        <button class="btn-modal-back" id="modal-back" data-i18n="btn_back">BACK</button>
-        <button class="btn-modal-next" id="modal-next" data-i18n="btn_next">NEXT</button>
+        <button class="btn-modal-back" id="modal-back" data-i18n="btn_back">Back</button>
+        <button class="btn-modal-next" id="modal-next" data-i18n="btn_next">Next</button>
       </div>
     </div>
   </div>
