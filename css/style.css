@@ -237,7 +237,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .hero-lede { color: var(--c-ink-mute); max-width: 44ch; margin-bottom: 2rem; line-height: 1.65; font-size: 1rem; }
 .hero-ctas { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
 .hero-photo-wrap { position: relative; aspect-ratio: 16/11; overflow: hidden; border-radius: 6px; }
-.hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.08) saturate(0.85) brightness(0.94); display: block; }
+.hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center 70%; filter: contrast(1.08) saturate(1.1) brightness(0.9); display: block; }
 .hero-photo-label { position: absolute; bottom: 0.75rem; left: 0.75rem; font-family: var(--f-body); font-size: 9px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(244,241,234,0.55); background: rgba(11,11,12,0.6); padding: 0.25rem 0.5rem; border-radius: 2px; }
 [dir="rtl"] .hero-photo-label { left: auto; right: 0.75rem; }
 .telemetry-strip { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line); margin-top: 4rem; }
