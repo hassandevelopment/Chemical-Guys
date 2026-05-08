@@ -206,7 +206,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 /* ── MARQUEE ───────────────────────────────────────────────── */
 .marquee-wrap {
   border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line);
-  overflow: hidden; padding: 0.75rem 0; margin-top: 82px;
+  overflow: hidden; padding: 0.75rem 0;
 }
 .marquee-track {
   display: flex; align-items: center;
