@@ -186,12 +186,6 @@ const STRINGS = {
 let currentLang = localStorage.getItem('cgbh-lang') || 'en';
 let cfgSize = 'M';
 let cfgTier = 'base';
-let bookingStep = 1;
-let selectedService = null;
-let selectedDate = null;
-let selectedTime = null;
-let bookingSize = 'M';
-let bookingTier = 'base';
 
 /* ── HELPERS ─────────────────────────────────────────────── */
 function t(key) { return STRINGS[currentLang]?.[key] ?? key; }
@@ -340,14 +334,6 @@ function initNavScroll() {
   });
 }
 
-/* ── FLOATING DOCK ───────────────────────────────────────── */
-function initFloatingDock() {
-  const dock = document.getElementById('floating-dock');
-  if (!dock) return;
-  window.addEventListener('scroll', () => {
-    dock.classList.toggle('visible', window.scrollY > 600);
-  });
-}
 
 /* ── HAMBURGER ───────────────────────────────────────────── */
 function initHamburger() {
@@ -416,92 +402,6 @@ function buildDatePicker() {
   }
 }
 
-/* ── BOOKING MODAL ───────────────────────────────────────── */
-function openBookingModal(step = 1, serviceId = null) {
-  bookingStep = step;
-  if (serviceId) {
-    selectedService = serviceId;
-    document.querySelectorAll('.service-pick-card').forEach(c => {
-      c.classList.toggle('selected', c.dataset.service === serviceId);
-    });
-  }
-  const overlay = document.getElementById('booking-overlay');
-  if (overlay) { overlay.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
-  buildDatePicker();
-  renderBookingStep();
-}
-
-function closeBookingModal() {
-  const overlay = document.getElementById('booking-overlay');
-  if (overlay) { overlay.style.display = 'none'; document.body.style.overflow = ''; }
-}
-
-function renderBookingStep() {
-  document.querySelectorAll('.modal-step').forEach((el, i) => {
-    el.classList.toggle('active', i + 1 === bookingStep);
-  });
-  const stepLabel = document.getElementById('modal-step-label');
-  const backBtn = document.getElementById('modal-back');
-  const nextBtn = document.getElementById('modal-next');
-  const stepTitles = [t('step1_title'), t('step2_title'), t('step3_title'), t('step4_title')];
-  if (stepLabel) stepLabel.textContent = `${t('modal_step')} ${bookingStep} ${t('modal_of')} 4 — ${stepTitles[bookingStep-1]}`;
-  if (backBtn) backBtn.style.display = bookingStep === 1 ? 'none' : '';
-  if (nextBtn) {
-    if (bookingStep === 4) { nextBtn.textContent = t('btn_send_wa'); nextBtn.onclick = sendToWhatsApp; }
-    else { nextBtn.textContent = t('btn_next'); nextBtn.onclick = advanceStep; }
-  }
-  if (bookingStep === 4) buildConfirmStep();
-  updateModalPrice();
-}
-
-function advanceStep() { if (bookingStep === 1 && !selectedService) return; if (bookingStep < 4) { bookingStep++; renderBookingStep(); } }
-function retreatStep()  { if (bookingStep > 1) { bookingStep--; renderBookingStep(); } }
-
-function updateModalPrice() {
-  const priceEl = document.getElementById('modal-price-display');
-  if (!priceEl) return;
-  const servicePrices = { detailing: PRICES[bookingSize][bookingTier], ceramic: PRICES[bookingSize][bookingTier], ppf: 25, heat: 60 };
-  priceEl.textContent = selectedService && servicePrices[selectedService] ? servicePrices[selectedService] + ' BHD' : '— BHD';
-}
-
-function buildConfirmStep() {
-  const container = document.getElementById('confirm-rows');
-  if (!container) return;
-  const nameEl  = document.getElementById('book-name');
-  const phoneEl = document.getElementById('book-phone');
-  const makeEl  = document.getElementById('book-make');
-  const modelEl = document.getElementById('book-model');
-  const notesEl = document.getElementById('book-notes');
-  const svcNames  = { detailing: t('svc1_title'), ceramic: t('svc2_title'), ppf: t('svc3_title'), heat: t('svc4_title') };
-  const sizeNames = { S: t('s_label'), M: t('m_label'), L: t('l_label') };
-  const tierNames = { base: t('base_label'), c6: t('c6_label'), c12: t('c12_label'), c24: t('c24_label') };
-  const rows = [
-    ['Service', svcNames[selectedService] || '—'],
-    ['Size', sizeNames[bookingSize]],
-    ['Ceramic', tierNames[bookingTier]],
-    [t('field_name'),  nameEl?.value  || '—'],
-    [t('field_phone'), phoneEl?.value || '—'],
-    ['Vehicle', ((makeEl?.value||'') + ' ' + (modelEl?.value||'')).trim() || '—'],
-    ['Date', selectedDate || '—'],
-    ['Time', selectedTime || '—'],
-    ...(notesEl?.value ? [['Notes', notesEl.value]] : []),
-  ];
-  container.innerHTML = rows.map(([k,v]) => `<div class="confirm-row"><span class="confirm-row-key">${k}</span><span class="confirm-row-val">${v}</span></div>`).join('');
-}
-
-function sendToWhatsApp() {
-  const nameEl  = document.getElementById('book-name');
-  const phoneEl = document.getElementById('book-phone');
-  const makeEl  = document.getElementById('book-make');
-  const modelEl = document.getElementById('book-model');
-  const notesEl = document.getElementById('book-notes');
-  const svcNames  = { detailing: t('svc1_title'), ceramic: t('svc2_title'), ppf: t('svc3_title'), heat: t('svc4_title') };
-  const sizeNames = { S: t('s_label'), M: t('m_label'), L: t('l_label') };
-  const tierNames = { base: t('base_label'), c6: t('c6_label'), c12: t('c12_label'), c24: t('c24_label') };
-  const servicePrices = { detailing: PRICES[bookingSize][bookingTier], ceramic: PRICES[bookingSize][bookingTier], ppf: 25, heat: 60 };
-  const msg = `Hi, I'd like to book:\n\nService: ${svcNames[selectedService]}\nVehicle: ${makeEl?.value||''} ${modelEl?.value||''}\nSize: ${sizeNames[bookingSize]}\nCeramic: ${tierNames[bookingTier]}\nName: ${nameEl?.value||''}\nPhone: ${phoneEl?.value||''}\nDate: ${selectedDate||''}\nTime: ${selectedTime||''}\nEst. Price: ${servicePrices[selectedService]||'—'} BHD${notesEl?.value ? '\nNotes: ' + notesEl.value : ''}`;
-  window.open(wa(msg), '_blank');
-}
 
 /* ── INIT ────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
@@ -510,7 +410,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initNavScroll();
   initHamburger();
-  initFloatingDock();
   initReveal();
   initPPFSlider();
   initPricingTable();
@@ -520,54 +419,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('lang-btn')?.addEventListener('click', () => setLang(currentLang === 'ar' ? 'en' : 'ar'));
   document.getElementById('mobile-lang-btn')?.addEventListener('click', () => setLang(currentLang === 'ar' ? 'en' : 'ar'));
-
-  document.querySelectorAll('[data-open-booking]').forEach(btn => {
-    btn.addEventListener('click', () => openBookingModal(1, btn.dataset.service || null));
-  });
-
-  document.getElementById('modal-close-btn')?.addEventListener('click', closeBookingModal);
-  document.getElementById('booking-overlay')?.addEventListener('click', e => { if (e.target === e.currentTarget) closeBookingModal(); });
-  document.getElementById('modal-back')?.addEventListener('click', retreatStep);
-  document.getElementById('modal-next')?.addEventListener('click', advanceStep);
-
-  document.querySelectorAll('.service-pick-card').forEach(card => {
-    card.addEventListener('click', () => {
-      selectedService = card.dataset.service;
-      document.querySelectorAll('.service-pick-card').forEach(c => c.classList.remove('selected'));
-      card.classList.add('selected');
-      updateModalPrice();
-    });
-  });
-
-  document.querySelectorAll('[data-book-size]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      bookingSize = btn.dataset.bookSize;
-      document.querySelectorAll('[data-book-size]').forEach(b => b.classList.toggle('active', b === btn));
-      updateModalPrice();
-    });
-  });
-  document.querySelectorAll('[data-book-tier]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      bookingTier = btn.dataset.bookTier;
-      document.querySelectorAll('[data-book-tier]').forEach(b => b.classList.toggle('active', b === btn));
-      updateModalPrice();
-    });
-  });
-
-  document.querySelectorAll('.time-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      selectedTime = btn.dataset.time;
-      document.querySelectorAll('.time-btn').forEach(b => b.classList.remove('selected'));
-      btn.classList.add('selected');
-    });
-  });
-
-  document.getElementById('dock-book-btn')?.addEventListener('click', () => openBookingModal());
-  document.getElementById('dock-wa-btn')?.addEventListener('click', () => {
-    window.open(wa(currentLang === 'ar' ? 'مرحباً، أود الاستفسار عن خدماتكم' : "Hi, I'd like to inquire about your services"), '_blank');
-  });
-
-  document.querySelectorAll('.service-card[data-service]').forEach(card => {
-    card.addEventListener('click', () => openBookingModal(1, card.dataset.service));
-  });
 });

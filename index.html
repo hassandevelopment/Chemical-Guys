@@ -24,7 +24,7 @@
   <div class="mobile-nav-status" style="margin-top:2rem">
     <div class="status-pill shop-status"><span class="status-dot"></span><span class="status-text"></span></div>
   </div>
-  <button class="mobile-book-btn" data-open-booking data-i18n="nav_book">Book Now</button>
+  <a href="https://wa.me/97333934433" target="_blank" rel="noopener" class="mobile-book-btn">WhatsApp Us</a>
   <button id="mobile-lang-btn" class="lang-btn" style="margin-top:1rem">العربية</button>
 </div>
 
@@ -47,7 +47,7 @@
   <div class="nav-right">
     <div class="status-pill shop-status"><span class="status-dot"></span><span class="status-text"></span></div>
     <button id="lang-btn" class="lang-btn">العربية</button>
-    <button class="nav-book" data-open-booking data-i18n="nav_book">Book Now</button>
+    <a href="https://wa.me/97333934433" target="_blank" rel="noopener" class="nav-book">WhatsApp</a>
     <button id="hamburger" class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -67,7 +67,7 @@
       </h1>
       <p class="hero-lede" data-i18n="hero_lede">Official Chemical Guys distributor in Bahrain. Professional detailing, nano ceramic coating, PPF, and heat insulation film in Tubli.</p>
       <div class="hero-ctas">
-        <button class="btn-primary" data-open-booking data-i18n="book_cta">Book an Appointment</button>
+        <a href="https://wa.me/97333934433" target="_blank" rel="noopener" class="btn-primary" data-i18n="book_cta">WhatsApp Us</a>
         <a href="#pricing" class="btn-link" data-i18n="prices_cta">See Prices</a>
       </div>
     </div>
@@ -275,7 +275,7 @@
     </div>
 
     <div class="pricing-cta-row reveal">
-      <button class="btn-primary" id="pricing-book-btn" data-open-booking data-i18n="cfg_book">Book This Package</button>
+      <a href="https://wa.me/97333934433" target="_blank" rel="noopener" class="btn-primary" data-i18n="cfg_book">WhatsApp to Book</a>
       <a href="#" class="btn-link" id="pricing-wa-link" target="_blank" rel="noopener" data-i18n="cfg_wa">Ask on WhatsApp</a>
       <span class="pricing-selected-summary" id="pricing-summary"></span>
     </div>
@@ -392,7 +392,7 @@
           <div class="ppf-feature-item">~50% gloss boost</div>
           <div class="ppf-feature-item">Certificate included</div>
         </div>
-        <button class="btn-primary" data-open-booking data-service="ppf">Book PPF</button>
+        <a href="https://wa.me/97333934433" target="_blank" rel="noopener" class="btn-primary">WhatsApp to Book</a>
       </div>
     </div>
   </div>
@@ -427,7 +427,7 @@
         </div>
 
         <div class="heat-ctas">
-          <button class="btn-primary" data-open-booking data-service="heat" data-i18n="heat_cta">Book Heat Film</button>
+          <a href="https://wa.me/97333934433" target="_blank" rel="noopener" class="btn-primary" data-i18n="heat_cta">WhatsApp to Book</a>
           <a href="tel:+97333934433" class="btn-ghost">+973 3393 4433</a>
         </div>
       </div>
@@ -603,143 +603,6 @@
 </footer>
 
 
-<!-- BOOKING MODAL -->
-<div id="booking-overlay" role="dialog" aria-modal="true">
-  <div id="booking-modal">
-    <div class="modal-header">
-      <div class="modal-header-left">
-        <span class="modal-step-label" id="modal-step-label">Step 1 of 4</span>
-        <h2 class="modal-title" data-i18n="booking_title">Booking</h2>
-      </div>
-      <button class="modal-close" id="modal-close-btn" aria-label="Close">&#x2715;</button>
-    </div>
-
-    <!-- Step 1 -->
-    <div class="modal-step active" id="step-1">
-      <div class="modal-body">
-        <div class="step-heading" data-i18n="step1_title">Select Service</div>
-        <div class="service-pick-grid">
-          <div class="service-pick-card" data-service="detailing">
-            <span class="pick-track">01</span>
-            <span class="pick-name" data-i18n="svc1_title">Detailing Package</span>
-            <span class="pick-from">From 35 BHD</span>
-          </div>
-          <div class="service-pick-card" data-service="ceramic">
-            <span class="pick-track">02</span>
-            <span class="pick-name" data-i18n="svc2_title">Nano Ceramic</span>
-            <span class="pick-from">From 40 BHD</span>
-          </div>
-          <div class="service-pick-card" data-service="ppf">
-            <span class="pick-track">03</span>
-            <span class="pick-name" data-i18n="svc3_title">Paint Protection Film</span>
-            <span class="pick-from">From 25 BHD</span>
-          </div>
-          <div class="service-pick-card" data-service="heat">
-            <span class="pick-track">04</span>
-            <span class="pick-name" data-i18n="svc4_title">Heat Insulation Film</span>
-            <span class="pick-from">60 BHD</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Step 2 -->
-    <div class="modal-step" id="step-2">
-      <div class="modal-body">
-        <div class="step-heading" data-i18n="step2_title">Vehicle Details</div>
-        <div class="two-col">
-          <div class="field-group">
-            <label data-i18n="field_make">Car Make</label>
-            <input type="text" id="book-make" class="field-input" placeholder="Toyota, BMW...">
-          </div>
-          <div class="field-group">
-            <label data-i18n="field_model">Model</label>
-            <input type="text" id="book-model" class="field-input" placeholder="Camry, X5...">
-          </div>
-        </div>
-        <div class="field-group" style="margin-top:0.5rem">
-          <label data-i18n="cfg_size_label">Vehicle Size</label>
-          <div class="toggle-group" style="margin-top:0.5rem">
-            <button class="toggle-btn" data-book-size="S"><span data-i18n="s_label">Small</span><span class="size-eg" data-i18n="s_eg">Sedan</span></button>
-            <button class="toggle-btn active" data-book-size="M"><span data-i18n="m_label">Medium</span><span class="size-eg" data-i18n="m_eg">SUV</span></button>
-            <button class="toggle-btn" data-book-size="L"><span data-i18n="l_label">Large</span><span class="size-eg" data-i18n="l_eg">7-Seater</span></button>
-          </div>
-        </div>
-        <div class="field-group" style="margin-top:1rem">
-          <label data-i18n="cfg_tier_label">Ceramic Protection</label>
-          <div class="toggle-group" style="flex-direction:column;gap:0.4rem;margin-top:0.5rem">
-            <button class="toggle-btn active" data-book-tier="base" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="base_label">Base Package</span><span class="toggle-price">45 BHD</span></button>
-            <button class="toggle-btn" data-book-tier="c6" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c6_label">+6 Mo Ceramic</span><span class="toggle-price">50 BHD</span></button>
-            <button class="toggle-btn" data-book-tier="c12" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c12_label">+1 Yr Ceramic</span><span class="toggle-price">60 BHD</span></button>
-            <button class="toggle-btn" data-book-tier="c24" style="flex-direction:row;justify-content:space-between;width:100%;min-width:0"><span data-i18n="c24_label">+2 Yr Ceramic</span><span class="toggle-price">75 BHD</span></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Step 3 -->
-    <div class="modal-step" id="step-3">
-      <div class="modal-body">
-        <div class="step-heading" data-i18n="step3_title">Your Details</div>
-        <div class="two-col">
-          <div class="field-group">
-            <label data-i18n="field_name">Full Name</label>
-            <input type="text" id="book-name" class="field-input" placeholder="Mohammed Al-...">
-          </div>
-          <div class="field-group">
-            <label data-i18n="field_phone">Phone</label>
-            <input type="tel" id="book-phone" class="field-input" placeholder="+973 ...">
-          </div>
-        </div>
-        <div class="field-group" style="margin-top:0.5rem">
-          <label>Preferred Date</label>
-          <div class="date-scroll" id="date-picker"></div>
-        </div>
-        <div class="field-group">
-          <label>Preferred Time</label>
-          <div class="time-grid">
-            <button class="time-btn" data-time="8:00 AM">8:00 AM</button>
-            <button class="time-btn" data-time="9:00 AM">9:00 AM</button>
-            <button class="time-btn" data-time="10:00 AM">10:00 AM</button>
-            <button class="time-btn" data-time="11:00 AM">11:00 AM</button>
-            <button class="time-btn" data-time="3:00 PM">3:00 PM</button>
-            <button class="time-btn" data-time="4:00 PM">4:00 PM</button>
-            <button class="time-btn" data-time="5:00 PM">5:00 PM</button>
-            <button class="time-btn" data-time="6:00 PM">6:00 PM</button>
-            <button class="time-btn" data-time="7:00 PM">7:00 PM</button>
-          </div>
-        </div>
-        <div class="field-group">
-          <label data-i18n="field_notes">Notes (optional)</label>
-          <textarea id="book-notes" class="field-input" rows="3" placeholder="Car colour, special requests..."></textarea>
-        </div>
-      </div>
-    </div>
-
-    <!-- Step 4 -->
-    <div class="modal-step" id="step-4">
-      <div class="modal-body">
-        <div class="step-heading" data-i18n="step4_title">Confirm Booking</div>
-        <div class="confirm-summary" id="confirm-rows"></div>
-        <div class="deposit-warning">
-          <div class="deposit-warning-title" data-i18n="deposit_title">Deposit Policy</div>
-          <p data-i18n="deposit_text">A deposit is required to confirm your booking. Deposits are non-refundable. You may postpone up to 2 days before your appointment.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-footer">
-      <div>
-        <span class="modal-footer-price-label" data-i18n="est_total">Est. Total</span>
-        <span class="modal-footer-price" id="modal-price-display">&#8212; BHD</span>
-      </div>
-      <div class="modal-nav-btns">
-        <button class="btn-modal-back" id="modal-back" data-i18n="btn_back">Back</button>
-        <button class="btn-modal-next" id="modal-next" data-i18n="btn_next">Next</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <script src="js/main.js"></script>
 </body>
