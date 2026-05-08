@@ -29,7 +29,7 @@
 
 /* ── RESET ─────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   background: var(--c-bg);
   color: var(--c-ink);
@@ -37,6 +37,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100vw;
   -webkit-font-smoothing: antialiased;
 }
 [lang="ar"] body,
@@ -128,8 +129,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 /* ── NAV ───────────────────────────────────────────────────── */
 #nav {
   position: fixed; top: 1rem;
-  left: 50%; transform: translateX(-50%);
-  width: min(1480px, calc(100% - 2rem));
+  left: 1rem; right: 1rem;
+  width: auto; max-width: 1480px;
   backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
   background: rgba(11,11,12,0.72);
   border: 1px solid rgba(42,42,47,0.6);
@@ -388,7 +389,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 
 /* ── FOOTER ─────────────────────────────────────────────────── */
 #footer { background: var(--c-bg-2); border-top: 1px solid var(--c-line); padding: clamp(3rem,5vw,5rem) clamp(1.25rem,3vw,2rem) 1.5rem; }
-.footer-wordmark { font-family: var(--f-display); font-size: clamp(3rem,9vw,8rem); font-weight: 800; text-transform: uppercase; letter-spacing: -0.03em; line-height: 0.9; margin-bottom: 3rem; border-bottom: 1px solid var(--c-line); padding-bottom: 2.5rem; }
+.footer-wordmark { font-family: var(--f-display); font-size: clamp(2rem,9vw,8rem); font-weight: 800; text-transform: uppercase; letter-spacing: -0.03em; line-height: 0.9; margin-bottom: 3rem; border-bottom: 1px solid var(--c-line); padding-bottom: 2.5rem; overflow: hidden; }
 .footer-wordmark .accent { color: var(--c-accent); }
 .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 3rem; }
 .footer-col-title { font-family: var(--f-body); font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-ink-dim); margin-bottom: 1rem; }
